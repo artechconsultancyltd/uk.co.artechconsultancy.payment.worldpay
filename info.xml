@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<extension key="uk.co.artechconsultancy.payment.worldpay" type="module">
+  <file>worldpay</file>
+  <name>WorldPay CiviCRM IPN Payment Processor</name>
+  <description>WorldPay Standard CiviCRM IPN Payment Processor</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Ramesh</author>
+    <email>info@artechconsultancy.co.uk</email>
+  </maintainer>
+  <releaseDate>2020-04-12</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.7</ver>
+    <ver>5.x</ver>
+  </compatibility>
+  <comments>This extension is developed for handling CiviCRM IPN payment via WorldPay</comments>
+  <civix>
+    <namespace>CRM/Worldpay</namespace>
+  </civix>
+</extension>
