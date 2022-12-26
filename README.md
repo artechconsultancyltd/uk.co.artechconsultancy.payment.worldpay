@@ -45,7 +45,7 @@ Please give a test and if you want to use it in lower or higher version.
 Please feel free to contact me if you have any issues. 
 You can find the contact details at the footer of this document.
 	
-Currently tested in CiviCRM 5.x.x / Drupal 7.x / Drupal 8.x.
+Currently tested in CiviCRM 5.x.x / Drupal 7.x / Drupal 8.x. / Drupal 9.x
 		
 --
 # CONTACT INFORMATION
