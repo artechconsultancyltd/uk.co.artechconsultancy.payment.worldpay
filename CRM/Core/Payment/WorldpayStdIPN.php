@@ -222,6 +222,7 @@ class CRM_Core_Payment_WorldpayStdIPN extends CRM_Core_Payment_BaseIPN {
     $paymentProcessorID = self::retrieve('processor_id','Integer','REQUEST',true);
 
     $input["component"] = $component;
+	$input['payment_processor_id'] = $paymentProcessorID;
 
     $this->getInput($input,$ids);
     $this->worldpay->log(__FILE__.":".__FUNCTION__." : component is $component");
@@ -275,7 +276,7 @@ class CRM_Core_Payment_WorldpayStdIPN extends CRM_Core_Payment_BaseIPN {
 
     //error_log(__FILE__.":".__FUNCTION__." : objects=".print_r($objects,true));
 
-    self::$_paymentProcessor =& $objects['paymentProcessor'];
+    self::$_paymentProcessor =&$objects['paymentProcessor'];
     if ($isFuturePay) {
       // future pay payment notification
       return $this->handleFuturepayPayment($input,$ids,$objects);
@@ -540,6 +541,4 @@ class CRM_Core_Payment_WorldpayStdIPN extends CRM_Core_Payment_BaseIPN {
     return $success;
   }
 
-};
-
-};
+}
